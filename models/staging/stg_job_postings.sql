@@ -1,6 +1,6 @@
 {{ config(materialized='table') }}
 
-select 
+select
     job_id,
     title,
     company,

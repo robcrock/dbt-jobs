@@ -9,7 +9,7 @@
         'superset','streaming','batch','aws','google','azure','nosql','influence','analysis',
         'stakeholder','insight','align','test','develop','share','collaborate','notebook',
         'prepare','curate','maintain','architect','design'
-    ] 
+    ]
 %}
 
 with stg_job_descriptions as (
@@ -26,7 +26,7 @@ job_postings as (
 
 joined as (
 
-    select 
+    select
         p.cleaned_title,
         jd.job_description
     from stg_job_descriptions jd join job_postings p
